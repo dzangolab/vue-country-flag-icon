@@ -1,14 +1,44 @@
 {
-  "name": "vue-country-flag-icon",
+  "name": "@dzangolab/vue-country-flag-icon",
   "version": "0.1.0",
-  "private": true,
+  "description": "A locale switcher component for vue.js",
+  "keywords": [
+    "vuejs",
+    "country",
+    "flag",
+    "icon"
+  ],
+  "homepage": "https://github.com/dzangolab/vue-country-flag-icon",
+  "bugs": "https://github.com/dzangolab/vue-country-flag-icon/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Olivier Pichon",
+    "email": "op@dzango.com",
+    "url": "https://github.com/opichon"
+  },
+  "repository": "github:dzangolab/vue-country-flag-icon",
   "scripts": {
+    "build": "vue-cli-service build --target lib --name CountryFlag ./src/components/CountryFlag/Index.vue",
+    "build:wc": "vue-cli-service build --target wc --name country-flag ./src/components/CountryFlag/Index.vue",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
+  },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "main": "./dist/country-flag.common.js",
+  "module:": "dist/country-flag.esm.js",
+  "unpkg": "dist/country-flag-icon.min.js",
+  "browser": {
+    "./sfc": "country-flag.vue"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "flag-icon-css": "^3.3.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -16,9 +46,12 @@
     "@vue/cli-plugin-eslint": "^3.10.0",
     "@vue/cli-service": "^3.10.0",
     "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/web-component-wrapper": "^1.2.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
+    "eslint": "^6.0.1",
     "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
   }
 }

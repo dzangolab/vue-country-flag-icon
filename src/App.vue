@@ -1,17 +1,18 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <CountryFlag iso="FR" />
+    <CountryFlag iso="FR" mode="squared" style="font-size:4rem;" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CountryFlag from './components/CountryFlag/Index.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    CountryFlag
   }
 }
 </script>
