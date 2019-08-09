@@ -8,7 +8,7 @@ lint:
 
 publish:
 	@printf "\033[0;32m>>> Publishing package to npmjs.org\033[0m\n"
-	npm publish --accept public
+	npm publish --access public
 
 run:
 	@printf "\033[0;32m>>> Running local server\033[0m\n"
