@@ -1,7 +1,7 @@
 {
   "name": "@dzangolab/vue-country-flag-icon",
   "version": "0.1.0",
-  "description": "A locale switcher component for vue.js",
+  "description": "A vue.js component to display country flag icons.",
   "keywords": [
     "vuejs",
     "country",
@@ -31,13 +31,8 @@
     "*.js"
   ],
   "main": "./dist/country-flag.common.js",
-  "module:": "dist/country-flag.esm.js",
-  "unpkg": "dist/country-flag-icon.min.js",
-  "browser": {
-    "./sfc": "country-flag.vue"
-  },
   "dependencies": {
-    "core-js": "^2.6.5",
+    "core-js": "^3.2.0",
     "flag-icon-css": "^3.3.0",
     "vue": "^2.6.10"
   },
@@ -47,10 +42,10 @@
     "@vue/cli-service": "^3.10.0",
     "@vue/eslint-config-standard": "^4.0.0",
     "@vue/web-component-wrapper": "^1.2.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^6.0.1",
-    "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.9.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
   }
