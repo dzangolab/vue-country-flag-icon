@@ -1,22 +1,3 @@
 $flag-icon-css-path: '~flag-icon-css/flags';
 
 @import 'flag-icon-css/sass/flag-icon.scss';
-
-
-.flag-icon {
-  &.flag-icon-rounded {
-    border-radius: 50%;
-    width: 1em;
-  }
-}
-
-@mixin flag-icon($country) {
-  .flag-icon-#{$country} {
-    background-image: url(#{$flag-icon-css-path}#{$flag-icon-rect-path}/#{$country}.svg);
-    &.flag-icon-squared,
-    &.flag-icon-rounded {
-      background-image: url(#{$flag-icon-css-path}#{$flag-icon-square-path}/#{$country}.svg);
-    }
-  }
-}
-

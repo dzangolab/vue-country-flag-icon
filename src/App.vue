@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>@dzangolab/vue-country-flag-icon</h1>
-    <p>A vue.js component to diplay a country flag</p>
+    <p>A vue.js component to display country flag as icons.</p>
     <table>
       <thead>
         <tr>
