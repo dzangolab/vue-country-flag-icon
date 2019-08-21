@@ -1,6 +1,6 @@
 {
   "name": "@dzangolab/vue-country-flag-icon",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A vue.js component to display country flag icons.",
   "keywords": [
     "vuejs",
@@ -30,10 +30,10 @@
     "*.json",
     "*.js"
   ],
-  "main": "./dist/country-flag.common.js",
+  "main": "./dist/CountryFlag.common.js",
   "dependencies": {
     "core-js": "^3.2.0",
-    "flag-icon-css": "^3.3.0",
+    "flag-icon-css": "dzangolab/flag-icon-css#master",
     "vue": "^2.6.10"
   },
   "devDependencies": {

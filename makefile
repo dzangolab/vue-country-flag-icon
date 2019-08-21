@@ -1,3 +1,7 @@
+build:
+	@printf "\033[0;32m>>> Building component for production\033[0m\n"
+	yarn build
+
 install:
 	@printf "\033[0;32m>>> Installing dependencies\033[0m\n"
 	yarn install
