@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import '@/assets/scss/country-flag.scss';
+import '@/assets/scss/country-flag.scss'
 
 export default {
   name: 'country-flag',
