@@ -36,6 +36,10 @@ Vue.use('CountryFlag', CountryFlag)
 
 ```javascript
 # MyComponent.vue
+<template>
+  <CountryFlag iso="GB" mode="squared" />
+  <CountryFlag iso="GB" mode="rounded" />
+</template>
 
 <script>
   import CountryFlag from '@dzangolab/vue-country-flag-icon'
