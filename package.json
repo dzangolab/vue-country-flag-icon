@@ -20,6 +20,7 @@
   "scripts": {
     "build": "vue-cli-service build --target lib --name CountryFlag ./src/components/CountryFlag/Index.vue",
     "build:wc": "vue-cli-service build --target wc --name country-flag ./src/components/CountryFlag/Index.vue",
+    "prepublish": "yarn run lint && yarn run build",
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint"
   },
