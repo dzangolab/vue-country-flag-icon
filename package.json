@@ -2,28 +2,19 @@
   "name": "@dzangolab/vue-country-flag-icon",
   "version": "0.2.0",
   "description": "A vue.js component to display country flag icons.",
-  "keywords": [
-    "vuejs",
-    "country",
-    "flag",
-    "icon"
-  ],
-  "homepage": "https://github.com/dzangolab/vue-country-flag-icon",
-  "bugs": "https://github.com/dzangolab/vue-country-flag-icon/issues",
-  "license": "MIT",
   "author": {
     "name": "Olivier Pichon",
     "email": "op@dzango.com",
     "url": "https://github.com/opichon"
   },
-  "repository": "github:dzangolab/vue-country-flag-icon",
   "scripts": {
-    "build": "vue-cli-service build --target lib --name CountryFlag ./src/components/CountryFlag/Index.vue",
-    "build:wc": "vue-cli-service build --target wc --name country-flag ./src/components/CountryFlag/Index.vue",
-    "prepublish": "yarn run lint && yarn run build",
     "serve": "vue-cli-service serve",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build --target lib --name CountryFlag ./src/components/CountryFlag/Index.vue",
+    "lint": "vue-cli-service lint",
+    "build:wc": "vue-cli-service build --target wc --name country-flag ./src/components/CountryFlag/Index.vue",
+    "prepublish": "yarn run lint && yarn run build"
   },
+  "main": "./dist/CountryFlag.common.js",
   "files": [
     "dist/*",
     "src/*",
@@ -31,12 +22,11 @@
     "*.json",
     "*.js"
   ],
-  "main": "./dist/CountryFlag.common.js",
   "dependencies": {
     "@dzangolab/flag-icon-css": "^3.4.5",
     "core-js": "^3.5.0",
     "node-sass": "^6.0.0",
-    "vue": "^2.6.11"
+    "vue": "^3.0.0-beta.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.1",
@@ -51,8 +41,17 @@
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "eslint-plugin-vue": "^6.0.1",
-    "sass-loader": "10",
-    "vue-template-compiler": "^2.6.13"
-  }
+    "eslint-plugin-vue": "^7.0.0-alpha.0",
+    "sass-loader": "10"
+  },
+  "bugs": "https://github.com/dzangolab/vue-country-flag-icon/issues",
+  "homepage": "https://github.com/dzangolab/vue-country-flag-icon",
+  "keywords": [
+    "vuejs",
+    "country",
+    "flag",
+    "icon"
+  ],
+  "license": "MIT",
+  "repository": "github:dzangolab/vue-country-flag-icon"
 }
