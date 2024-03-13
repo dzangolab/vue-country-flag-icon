@@ -2,12 +2,7 @@
   "name": "@dzangolab/vue-country-flag-icon",
   "version": "0.2.0",
   "description": "A vue.js component to display country flag icons.",
-  "keywords": [
-    "vuejs",
-    "country",
-    "flag",
-    "icon"
-  ],
+  "keywords": ["vuejs", "country", "flag", "icon"],
   "homepage": "https://github.com/dzangolab/vue-country-flag-icon",
   "bugs": "https://github.com/dzangolab/vue-country-flag-icon/issues",
   "license": "MIT",
@@ -22,15 +17,10 @@
     "build:wc": "vue-cli-service build --target wc --name country-flag ./src/components/CountryFlag/Index.vue",
     "prepublish": "yarn run lint && yarn run build",
     "serve": "vue-cli-service serve",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "release": "shipjs prepare"
   },
-  "files": [
-    "dist/*",
-    "src/*",
-    "public/*",
-    "*.json",
-    "*.js"
-  ],
+  "files": ["dist/*", "src/*", "public/*", "*.json", "*.js"],
   "main": "./dist/CountryFlag.common.js",
   "dependencies": {
     "@dzangolab/flag-icon-css": "^3.4.5",
@@ -52,6 +42,7 @@
     "eslint-plugin-vue": "^6.0.1",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
+    "shipjs": "0.26.3",
     "vue-template-compiler": "^2.6.11"
   }
 }
