@@ -4,7 +4,7 @@ Country flag component for Vue. Supports SSR apps.
 
 ## Requirements
 
-* vue.js >= 2.6
+* vue.js >= 3.0
 
 ## Usage
 
@@ -25,11 +25,10 @@ yarn add @dzangolab/vue-country-flag-icon
 ``` javascript
 # main.js
 
-import Vue from 'vue'
 import CountryFlag from '@dzangolab/vue-country-flag-icon'
 import '@dzangolab/vue-country-flag-icon/dist/CountryFlag.css' // import stylesheet
 
-Vue.use('CountryFlag', CountryFlag)
+app.use('CountryFlag', CountryFlag)
 ```
 
 ### Add CountryFlag inside a component
